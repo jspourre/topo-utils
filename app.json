@@ -3,14 +3,16 @@
     "name": "land-nav-toolkit",
     "slug": "land-nav-toolkit",
     "version": "1.0.0",
-    "orientation": "portrait",
+    "orientation": "default",
     "icon": "./assets/images/icon.png",
     "scheme": "landnavtoolkit",
     "userInterfaceStyle": "automatic",
     "ios": {
-      "icon": "./assets/expo.icon"
+      "icon": "./assets/expo.icon",
+      "bundleIdentifier": "com.jspourre.landnavtoolkit"
     },
     "android": {
+      "package": "com.jspourre.landnavtoolkit",
       "adaptiveIcon": {
         "backgroundColor": "#E6F4FE",
         "foregroundImage": "./assets/images/android-icon-foreground.png",
@@ -37,6 +39,13 @@
     "experiments": {
       "typedRoutes": true,
       "reactCompiler": true
-    }
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "f5a220ba-4666-4dfd-9d9e-7006111a5dce"
+      }
+    },
+    "owner": "jspourre"
   }
 }

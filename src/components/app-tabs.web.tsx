@@ -22,10 +22,19 @@ export default function AppTabs() {
       <TabList asChild>
         <CustomTabList>
           <TabTrigger name="home" href="/" asChild>
-            <TabButton>Home</TabButton>
+            <TabButton>Accueil</TabButton>
           </TabTrigger>
-          <TabTrigger name="explore" href="/explore" asChild>
-            <TabButton>Explore</TabButton>
+          <TabTrigger name="coordinates" href="/coordinates" asChild>
+            <TabButton>Coordonnées</TabButton>
+          </TabTrigger>
+          <TabTrigger name="azimuth" href="/azimuth" asChild>
+            <TabButton>Azimut</TabButton>
+          </TabTrigger>
+          <TabTrigger name="compass" href="/compass" asChild>
+            <TabButton>Boussole</TabButton>
+          </TabTrigger>
+          <TabTrigger name="slope" href="/slope" asChild>
+            <TabButton>Pente</TabButton>
           </TabTrigger>
         </CustomTabList>
       </TabList>
@@ -55,7 +64,7 @@ export function CustomTabList(props: TabListProps) {
     <View {...props} style={styles.tabListContainer}>
       <ThemedView type="backgroundElement" style={styles.innerContainer}>
         <ThemedText type="smallBold" style={styles.brandText}>
-          Expo Starter
+          Land Nav Toolkit
         </ThemedText>
 
         {props.children}

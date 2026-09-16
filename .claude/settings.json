@@ -1,5 +1,20 @@
 {
   "enabledPlugins": {
     "expo@claude-plugins-official": true
+  },
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Write|Edit|Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "for d in \"${CLAUDE_PROJECT_DIR:-}\" \"$PWD\" \"${CLAUDE_PROJECT_DIR:-.}\"/*/; do [ -f \"$d/package.json\" ] || continue; [ \"$d/package.json\" -nt \"$d/node_modules/.package-lock.json\" ] || continue; if (cd \"$d\" && npm install --no-audit --no-fund >node_modules/.claude-npm-install.log 2>&1); then touch \"$d/node_modules/.package-lock.json\"; echo \"{\\\"systemMessage\\\":\\\"package.json modifie : npm install termine\\\"}\"; else echo \"{\\\"systemMessage\\\":\\\"package.json modifie : npm install a echoue (voir node_modules/.claude-npm-install.log)\\\"}\"; fi; break; done; exit 0",
+            "timeout": 300,
+            "statusMessage": "npm install (package.json modifié)"
+          }
+        ]
+      }
+    ]
   }
 }
