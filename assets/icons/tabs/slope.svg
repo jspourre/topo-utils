@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="#FFFFFF" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+  <!-- Triangle de pente : base, dénivelé, angle -->
+  <path d="M 3.2 19.2 H 20.8 V 6.4 Z"/>
+  <path d="M 9.4 19.2 A 6.2 6.2 0 0 0 8.2 15.6" stroke-width="1.5"/>
+</svg>

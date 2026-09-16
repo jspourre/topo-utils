@@ -29,18 +29,34 @@ export default function AppTabs() {
       <NativeTabs.Trigger name="coordinates">
         {/* Abrégé : à cinq onglets labellisés, « Coordonnées » est tronqué sur un écran de téléphone. */}
         <NativeTabs.Trigger.Label>Coord.</NativeTabs.Trigger.Label>
+        <NativeTabs.Trigger.Icon
+          src={require('@/assets/images/tabIcons/coordinates.png')}
+          renderingMode="template"
+        />
       </NativeTabs.Trigger>
 
       <NativeTabs.Trigger name="azimuth">
         <NativeTabs.Trigger.Label>Azimut</NativeTabs.Trigger.Label>
+        <NativeTabs.Trigger.Icon
+          src={require('@/assets/images/tabIcons/azimuth.png')}
+          renderingMode="template"
+        />
       </NativeTabs.Trigger>
 
       <NativeTabs.Trigger name="compass">
         <NativeTabs.Trigger.Label>Boussole</NativeTabs.Trigger.Label>
+        <NativeTabs.Trigger.Icon
+          src={require('@/assets/images/tabIcons/compass.png')}
+          renderingMode="template"
+        />
       </NativeTabs.Trigger>
 
       <NativeTabs.Trigger name="slope">
         <NativeTabs.Trigger.Label>Pente</NativeTabs.Trigger.Label>
+        <NativeTabs.Trigger.Icon
+          src={require('@/assets/images/tabIcons/slope.png')}
+          renderingMode="template"
+        />
       </NativeTabs.Trigger>
     </NativeTabs>
   );

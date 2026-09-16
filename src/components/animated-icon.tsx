@@ -14,9 +14,9 @@ export function AnimatedSplashOverlay() {
 
   if (!visible) return null;
 
+  // Fondu seul : on tient l'image opaque, puis on l'efface d'ici 70 %.
   const splashKeyframe = new Keyframe({
     0: {
-      transform: [{ scale: 1 }],
       opacity: 1,
     },
     20: {
@@ -28,12 +28,14 @@ export function AnimatedSplashOverlay() {
     },
     100: {
       opacity: 0,
-      transform: [{ scale: 1 }],
-      easing: Easing.elastic(0.7),
     },
   });
 
-  const image = <Image style={styles.image} source={require('@/assets/images/expo-logo.png')} />;
+  // Doit reprendre trait pour trait le splash natif (`expo-splash-screen` dans app.json) :
+  // même image, même largeur (`imageWidth`), même fond — sinon le passage de l'un à l'autre saute.
+  const image = (
+    <Image style={styles.splashImage} source={require('@/assets/images/splash-icon.png')} />
+  );
 
   return animate ? (
     <Animated.View
@@ -131,6 +133,10 @@ const styles = StyleSheet.create({
     width: 76,
     height: 71,
   },
+  splashImage: {
+    width: 200,
+    height: 200,
+  },
   background: {
     borderRadius: 40,
     experimental_backgroundImage: `linear-gradient(180deg, #3C9FFE, #0274DF)`,
@@ -140,7 +146,7 @@ const styles = StyleSheet.create({
   },
   splashOverlay: {
     ...StyleSheet.absoluteFill,
-    backgroundColor: '#208AEF',
+    backgroundColor: '#1F2421',
     alignItems: 'center',
     justifyContent: 'center',
     zIndex: 1000,

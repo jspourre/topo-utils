@@ -20,6 +20,7 @@ Un fichier par demande.
 | [11-slope-denivele-depuis-pourcentage.md](11-slope-denivele-depuis-pourcentage.md) | Dénivelé à partir du % de pente | Livré |
 | [12-navigation-lisible-smartphone.md](12-navigation-lisible-smartphone.md) | Barre de navigation lisible sur téléphone | Livré |
 | [13-tuiles-hors-ligne.md](13-tuiles-hors-ligne.md) | Téléchargement de tuiles sur un cadre + mode hors ligne | **À faire** — bloqué sur la source de tuiles |
+| [14-icones-application.md](14-icones-application.md) | Refonte du jeu d'icônes (marque, adaptive Android, splash, onglets) | Livré |
 | [annexe-incident-restauration.md](annexe-incident-restauration.md) | Incident de restauration (entre les demandes 3 et 4) | — |
 
 ## Convention
