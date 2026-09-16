@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="#FFFFFF" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+  <!-- Réticule : un point repéré sur la carte -->
+  <circle cx="12" cy="12" r="6.3"/>
+  <path d="M 12 1.8 V 5"/>
+  <path d="M 12 19 V 22.2"/>
+  <path d="M 1.8 12 H 5"/>
+  <path d="M 19 12 H 22.2"/>
+  <circle cx="12" cy="12" r="1.5" fill="#FFFFFF" stroke="none"/>
+</svg>

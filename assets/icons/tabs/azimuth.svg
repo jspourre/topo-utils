@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="#FFFFFF" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+  <!-- Deux flèches issues du même point : le nord, puis la visée -->
+  <path d="M 5.5 19.5 V 4.5"/>
+  <path d="M 3.2 7 L 5.5 4 L 7.8 7"/>
+  <path d="M 5.5 19.5 L 19.2 9"/>
+  <path d="M 13.8 8.5 H 20 V 14.2"/>
+</svg>
